@@ -1,6 +1,6 @@
 package test;
 
-import org.adneom.Main;
+import org.adneom.ListPartition;
 import org.junit.*;
  import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,7 +42,7 @@ public class TestPartition {
         //outputList expected [[1, 2], [3, 4], [5]]
         expectedList.addAll(Arrays.asList(Arrays.asList(1,2), Arrays.asList(3,4),Arrays.asList(5)));
         System.out.println("outputList 1 expected :" +expectedList.toString());
-        assertEquals(Main.partition(inputList, 2),expectedList);
+        assertEquals(ListPartition.partition(inputList, 2),expectedList);
 
     }
 
@@ -53,7 +53,7 @@ public class TestPartition {
         expectedList.addAll(Arrays.asList(Arrays.asList(1,2,3), Arrays.asList(4,5)));
         //outputList expected [[1, 2], [3, 4], [5]]
         System.out.println("outputList 2 expected :" +expectedList.toString());
-        assertEquals(Main.partition(inputList, 3),expectedList);
+        assertEquals(ListPartition.partition(inputList, 3),expectedList);
 
     }
 
@@ -64,7 +64,7 @@ public class TestPartition {
         expectedList.addAll(Arrays.asList(Arrays.asList(1), Arrays.asList(2), Arrays.asList(3),
                 Arrays.asList(4), Arrays.asList(5))); //outputList expected [[1], [2], [3], [4], [5]]
         System.out.println("outputList 3 expected :" +expectedList.toString());
-         assertEquals(Main.partition(inputList, 1),expectedList);
+         assertEquals(ListPartition.partition(inputList, 1),expectedList);
 
     }
 }

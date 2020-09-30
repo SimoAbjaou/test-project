@@ -8,7 +8,7 @@ import java.util.List;
 
 
 
-public class Main {
+public class ListPartition {
 
 
     public static List<List<Integer>> partition(List<Integer> liste, Integer taille) {
